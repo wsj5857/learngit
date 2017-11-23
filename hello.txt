@@ -1,2 +1,30 @@
-Git is a distributed version control system
-Git is free software distributed under the GPL...
+ip access-list extended kaifa-test02
+ permit ip host 192.168.0.39 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.66 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.57 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.139 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.76 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.83 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.106 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.120 172.16.21.0 0.0.0.255
+ permit ip host 192.168.1.14 172.16.21.0 0.0.0.255
+ permit ip host 192.168.1.149 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.92 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.122 172.16.21.0 0.0.0.255
+ permit ip host 192.168.1.73 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.75 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.199 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.100 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.110 172.16.21.0 0.0.0.255
+ permit ip host 192.168.1.146 172.16.21.0 0.0.0.255
+ permit ip host 192.168.0.37 172.16.21.0 0.0.0.255
+ permit tcp any 172.16.21.0 0.0.0.255 eq 19010
+ permit tcp any 172.16.21.0 0.0.0.255 eq 6379
+ permit tcp any 172.16.21.0 0.0.0.255 eq 2181
+ permit tcp any 172.16.21.0 0.0.0.255 eq 11080
+ permit tcp any 172.16.21.0 0.0.0.255 eq 19000
+ permit tcp any 172.16.21.0 0.0.0.255 eq 8080
+ permit ip any host 172.16.21.230
+ permit ip any host 172.16.21.232
+ deny   ip any 172.16.21.0 0.0.0.255
+ permit ip any any
